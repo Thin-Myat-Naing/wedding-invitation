@@ -1,0 +1,117 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+}
+//Display 2
+.display-2 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.01rem;
+    color: $primary;
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.4rem;
+            display: inline-block;
+        }
+    }
+}
+
+//Display 3
+.display-3 {
+    // font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Shalimar', cursive;
+    color: $rose;
+    font-size: 4.2rem;
+    letter-spacing: 0.02em;
+}
+//display-6
+.display-6 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: $oracle;
+    &--date {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.1rem;
+        padding-top: 1.2rem;
+    }
+    &--place {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 0.9rem;
+        padding-top: 0.2rem;
+    }
+}
+
+//Border-right
+.border-right {
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+}
+
+// gradient
+.gardient {
+    @include gradient;
+}
+//rounded image
+.rounded-img {
+    width: 80%;
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    margin-left: 2.2rem;
+
+}
+.rounded-img:after {
+    content: '';
+    background: url("/images/carousel/flower-border.png");
+}
+//border-flower
+.border-flower {
+    width: 28%;
+    // border-radius: 50%;
+    height: 47%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99;
+    display: none;
+    @include media-breakpoint-up(sm) {
+         display: inline-block;
+     }
+}
+//border-img
+.border-img {
+    width: 200px;
+    margin: 0 auto;
+    filter: brightness(0.3);
+}
+//flower-icon
+.icon {
+    width: 200px;
+    margin: 0 auto;
+}
+section {
+    padding-top: 6em;
+}
+.footer-bottom {
+    background-color: $oracle;
+}
+

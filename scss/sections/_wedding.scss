@@ -1,0 +1,25 @@
+@use '../custom' as *;
+
+.countdown {
+   display: block;
+   justify-content: center;
+   #days, #hours, #minutes, #seconds {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.2rem;
+      color: $primary;
+      letter-spacing: 0.01rem;
+   }
+   
+   p {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.2rem;
+      color: $gray-600;
+      letter-spacing: 0.01rem;
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+   }
+   @include media-breakpoint-up(sm) {
+     display: flex;
+   }
+}

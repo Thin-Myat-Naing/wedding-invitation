@@ -1,0 +1,15 @@
+@use 'custom';
+//Import the Components
+@use 'components/animation';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+//Import the Sections
+@use 'sections/navbar';
+@use 'sections/carousel';
+@use 'sections/wedding';
+@use 'sections/gallery';
+@use 'sections/footer';
+
+

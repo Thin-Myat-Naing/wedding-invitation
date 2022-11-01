@@ -1,0 +1,12 @@
+@use '../custom' as *;
+
+.footer-bottom__copyright {
+   font-family: 'Space Grotesk', sans-serif;
+   a {
+      font-family: 'Space Grotesk', sans-serif;
+      color: $primary;
+      &:hover {
+         color: $rose;
+      }
+   }
+}
